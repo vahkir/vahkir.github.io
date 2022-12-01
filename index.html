@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsiv.css">
+    <title>Клара</title>
+</head>
+<body>
+    <div id="polzvatel"></div>
+    <p class="pivi">Вы</p>
+    <canvas id="container" width="400" height="400"></canvas>
+    <div id="massovka"></div>
+    <div class="bi"></div>
+      <div class="setting"></div>
+      <div class="ptextdiv">
+          <h2>Управление голосом</h2>
+          <div class="comcenter">
+              <div class="speedtextvalue"><p>1.3</p></div>
+              <div class="pitchtextvalue"><p>1.8</p></div>
+              <p class="speedvoice">скорость голоса</p>
+              <span>0.1</span>
+              <input type="range" min="1" max="100" class="speedslid" value="13">
+              <span>10</span>
+              <p class="pitchvoice">высота тона</p>
+              <span>0</span>
+              <input type="range" min="0" max="20" class="pitchslid" value="18">
+              <span>2</span>
+              <div class="block">
+                  <label for="radio1" class="labKlar">Клара</label>
+                  <input type="radio" name="menwou" id="radio1" checked>
+                  <label for="radio2" class="labDav">Давид</label>
+                  <input type="radio" name="menwou" id="radio2">
+                </div>
+                <label for="ang" class="engspan">English</label>
+                <input type="radio" id="ang">
+                <label for="rus" class="russpan">Русский</label>
+                <input type="radio" id="rus">
+            <div class="standart">настройки по умолчанию</div>
+        </div>
+        <p class="allComand">Все команды</p>
+        <div class="allcommand">
+            команда--перевести на армянский(текст),<br> команда--перевести на английский(текст),<br> команда--расскажи анекдот, <br> команда--(вами сказанные цифры)драм в долларах, <br> команда--(вами сказанные цифры)рублей в драмах, <br> команда--курс рубля в долларах, <br> команда--курс доллара в драмах, <br> команда--курс доллара в рублях, <br>команда--курс драма в рублях, <br> команда--курс рубля в драмах, <br> команда--искать(текст), <br> команда--открыть instagram, <br> команда--открыть facebook, <br> команда--открыть google, <br> команда--открыть youtube, <br> команда--сколько времени, <br> команда--какой сегодня день?, <br> команда--кто твой создатель?, <br> команда--скажи рандомную цифру от (вами заданная цифра) до (вами заданная цифра), <br> команда--скажи слово(текст), <br> команда--скажи что я("я" заменит на "ты" и текст), <br> команда--скажи что ты("ты" заменит на "я" и текст), <br> команда--голос, <br> команда--расскажи о своей имени, <br> команда--как тебя зовут, <br> команда--клара/давид, <br> команда--как дела, как настроение, как дела клара/давид, и так далее, <br> команда--привет, дружище, здравствуй клара/давид, и так далее, <br> команда--какие команды тебе можно задать?, <br> команда--ты женщина?, ты мужчина?, ты мальчик?, ты девочка?, <br> команда--поставь таймер на (0-10 минуты) и (0-60 секунды), <br> команда--сколько будет(математическое выражение(цифры и / * + -)), <br> команда--какая температура в ("город"), какая погода в ("город")<br>команда--искать в youtube(текст)
+        </div>
+        
+    </div>
+      <div id="robot"></div>
+      <p class="piviro">Робот Клара</p>
+      <div class="timer">
+        <p>00:00</p>
+        <div class="delet">удалить</div>
+    </div>
+
+    <script src="main.js"></script>
+    <script src="main2.js"></script>
+    <script src="animation.js"></script>
+</body>
+</html>

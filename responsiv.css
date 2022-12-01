@@ -1,0 +1,176 @@
+@media screen and (max-width:780px){
+    .ptextdiv {
+        width: 400px;
+        height: 550px;
+        font: 600 20px sans-serif;
+        line-height: 40px;
+    }
+
+    .ptextdiv p{
+        font-size: 32px;
+    }
+
+    #polzvatel {
+        height: 75px;
+        font: 700 1.6rem sans-serif;
+        padding: 5px 25px 15px 25px;
+    }
+
+    #robot {
+        height: 77px;
+        font: 700 1.6rem sans-serif;
+        padding: 5px 25px 15px 25px;
+        top: calc(100% - 108px);
+    }
+
+    .setting {
+        width: 40px;
+        height: 40px;
+        top: 1%;
+        right: 1.8%;
+
+    }
+
+    #container {
+        width: 215px;
+        height: 215px;
+    }
+
+    #massovka {
+        width: 220px;
+        height: 220px;
+    }
+
+    .bi {
+        width: 54px;
+        height: 54px;
+    }
+
+    .timer{
+        width: 170px;
+        height: 65px;
+        top: 27%;
+        left: 85%;
+        transform: translate(-85%, -27%);
+    }
+    
+    .timer p{
+        height: 35px;
+        font: 600 29px Arial;
+
+    }
+    
+    .delet{
+        height: 30px;
+        font: 600 18px Arial;
+    }
+}
+
+@media screen and (max-width:420px){
+    .ptextdiv {
+        width: 280px;
+        height: 500px;
+        padding: 15px 5px 5px 15px;
+        font: 600 16px sans-serif;
+        line-height: 40px;
+    }
+
+    .ptextdiv p{
+        font-size: 24px;
+    }
+
+    #container {
+        width: 185px;
+        height: 185px;
+    }
+
+    #polzvatel {
+        height: 65px;
+        font: 700 1.1rem sans-serif;
+        padding: 5px 20px 15px 20px;
+        top: 25px;
+    }
+
+    .setting {
+        width: 35px;
+        height: 35px;
+        top: 1%;
+        right: 3%;
+
+    }
+
+    .pivi {
+        font: 600 1.4rem Arial;
+    }
+
+    .bi {
+        width: 47px;
+        height: 47px;
+    }
+
+    #massovka {
+        width: 190px;
+        height: 190px;
+    }
+
+    .piviro {
+        font: 600 1.4rem Arial;
+    }
+    
+    #robot {
+        height: 65px;
+        padding: 5px 20px 15px 20px;
+        font: 700 1.1rem sans-serif;
+        top: calc(100% - 91px);
+    }
+
+    .timer{
+        width: 130px;
+        height: 45px;
+        top: 27%;
+        left: 85%;
+        transform: translate(-85%, -27%);
+    }
+    
+    .timer p{
+        height: 25px;
+        font: 600 23px Arial;
+
+    }
+    
+    .delet{
+        height: 20px;
+        font: 600 15px Arial;
+    }
+
+    .ptextdiv .comcenter p {
+        font-size: 18px;
+    }
+
+    .ptextdiv h2{
+        font-size: 22px;
+    }
+
+    .ptextdiv .comcenter {
+        height: 220px;
+    }
+
+    .ptextdiv .comcenter .standart {
+        height: 40px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        font-size: 15px;
+    }
+
+    .ptextdiv .comcenter .speedtextvalue p{
+        font-size: 18px;
+        padding: 0;
+    }
+    
+    .ptextdiv .comcenter .pitchtextvalue p{
+        font-size: 18px;
+        padding: 0;
+    }
+}

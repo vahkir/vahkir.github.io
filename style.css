@@ -1,0 +1,396 @@
+* {margin: 0; padding: 0; box-sizing: border-box;}
+
+body {
+    height: 100vh;
+    background: linear-gradient(45deg, rgb(255, 243, 188), rgb(179, 0, 255));
+}
+
+#container {
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    cursor: pointer;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.bi {
+    width: 62px;
+    height: 62px;
+    background: url(iconaudio.png) no-repeat center / cover;
+    color: rgb(255, 192, 219);
+    position: absolute;
+    z-index: 1;
+    animation: bee 2s linear infinite;
+    margin: auto;
+    top: 0; bottom: 0; left: 0; right: 0;
+}
+
+@keyframes bee {
+    50% {
+        transform: scale(1.2);
+    }
+}
+
+#polzvatel {
+    width: 100%;
+    height: 84px;
+    background-color: rgba(181, 125, 255, 0.201);
+    font: 700 2rem sans-serif;
+    color: #fff;
+    padding: 10px 30px 20px 30px;
+    position: absolute;
+    top: 31px;
+    text-shadow: 0px 2px 3px rgb(77, 77, 77);
+    overflow-y: auto;
+    scroll-snap-type: y mandatory;
+    z-index: 5;
+    transition: .9s;
+}
+
+#robot {
+    width: 100%;
+    height: 86px;
+    background-color: rgba(254, 255, 227, 0.091);
+    font: 700 2rem sans-serif;
+    color: #fff;
+    padding: 9px 30px 20px 30px;
+    text-shadow: 0px 2px 3px rgb(77, 77, 77);
+    position: absolute;
+    top: calc(100% - 117px);
+    overflow-y: auto;
+    scroll-snap-type: y mandatory;
+    z-index: 5;
+    transition: .9s;
+}
+
+::-webkit-scrollbar{
+    width: 15px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgb(188, 64, 255);
+    border-radius: 20px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: rgb(127, 246, 255);
+    border-radius: 15px;
+    border: 2px solid #fff;
+}
+
+.pivi {
+    width: 100%;
+    color: #fff;
+    font: 600 1.7rem Arial;
+    position: absolute;
+    top: 0%;
+    text-align: center;
+    text-shadow: 0px 1px 1px rgb(77, 77, 77);
+    background-color: rgba(181, 125, 255, 0.201);
+}
+
+.piviro {
+    width: 100%;
+    color: #fff;
+    font: 600 1.7rem Arial;
+    position: absolute;
+    bottom: 0%;
+    text-align: center;
+    text-shadow: 0px 1px 1px rgb(77, 77, 77);
+    background-color: rgba(254, 255, 227, 0.091);
+}
+
+#massovka {
+    position: absolute;
+    width: 290px;
+    height: 290px;
+    margin: auto;
+    transform: rotate(45deg);
+    top: 0; bottom: 0; left: 0; right: 0;
+    cursor: pointer;
+    z-index: 5;
+    visibility: hidden;
+}
+
+.setting {
+    width: 45px;
+    height: 45px;
+    background: url(setting2.png) no-repeat center / cover;
+    position: absolute;
+    top: 1%;
+    right: 1.5%;
+    cursor: pointer;
+    transition: .4s;
+    z-index: 6;
+}
+
+.ptextdiv {
+    width: 500px;
+    height: 600px;
+    box-shadow: 2px 7px 7px 3px rgb(74 74 74);
+    background: linear-gradient(45deg, rgba(200, 71, 255, 0.694), rgba(249, 227, 131, 0.694));
+    border-radius: 40px 8px 8px 40px;
+    z-index: 7;
+    position: absolute;
+    top: -5%;
+    left: 50%;
+    transition: .7s;
+    padding: 20px 10px 10px 30px;
+    font: 600 26px sans-serif;
+    overflow-y: auto;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 2px 3px #000;
+    line-height: 45px;
+    transform: translate(-50%);
+    opacity: 0;
+    visibility: hidden;
+}
+
+.ptextdiv::-webkit-scrollbar-track {
+    background-color: rgb(188, 64, 255);
+    border-radius: 10px 1px 1px 10px;
+}
+
+.ptextdiv::-webkit-scrollbar-thumb {
+    background-color: rgb(152 52 255);
+    border-radius: 10px 2px 2px 10px;
+    border: 0px solid #000;
+}
+
+.ptextdiv p{
+    text-align: center;
+    font-size: 38px;
+}
+
+.timer{
+    width: 210px;
+    height: 80px;
+    border-radius: 35px;
+    box-shadow: 1px 3px 5px #000;
+    background-color: #fff;
+    position: absolute;
+    top: 22%;
+    left: 85%;
+    transform: translate(-85%, -22%);
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+}
+
+.timer p{
+    width: 100%;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    font: 600 33px Arial;
+    align-items: center;
+    padding: 5px 0 0 0;
+}
+
+.delet{
+    width: 100%;
+    height: 35px;
+    font: 600 20px Arial;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0 5px 0;
+    transition: .3s;
+}
+
+.delet:hover{
+    box-shadow: inset -1px 2px 4px #000;
+    background-color: rgb(239, 239, 239);
+}
+
+.ptextdiv h2{
+    text-align: center;
+    margin: 2px 5px 18px 5px;
+}
+
+.ptextdiv .comcenter {
+    width: 95%;
+    height: 350px;
+    background: linear-gradient(45deg, rgba(197, 62, 255, 0.694), rgba(255, 226, 98, 0.694));
+    border-radius: 35px;
+    padding: 5px 10px 10px 10px;
+    margin: 5px 5px 20px 5px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0px 3px 4px 0px #000;
+    overflow: hidden;
+    user-select: none;
+}
+
+.ptextdiv .comcenter input{
+    appearance: none;
+    width: 80%;
+    height: 6px;
+    background: rgb(175, 204, 255);
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.ptextdiv .comcenter input::-webkit-slider-thumb{
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    background-color: rgb(138, 43, 226);
+    border-radius: 7px;
+}
+
+.ptextdiv .comcenter p {
+    font-size: 26px;
+}
+
+.ptextdiv .comcenter .speedtextvalue{
+    width: 40px;
+    height: 40px;
+    background: rgb(190, 116, 255);
+    position: absolute;
+    left: 50%;
+    top: 6%;
+    transform: translate(-50%, -5%) rotate(45deg) scale(0.7);
+    border: 2px solid #fff;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    opacity: 0;
+    transition: .3s;
+}
+
+.ptextdiv .comcenter .pitchtextvalue{
+    width: 40px;
+    height: 40px;
+    background: rgb(190, 116, 255);
+    position: absolute;
+    left: 50%;
+    top: 32%;
+    transform: translate(-50%, -5%) rotate(45deg) scale(0.7);
+    border: 2px solid #fff;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    opacity: 0;
+    transition: .3s;
+}
+
+.ptextdiv .comcenter .anim1{
+    transform: translate(-50%, -5%) rotate(45deg) scale(1);
+    opacity: 1;
+}
+
+.ptextdiv .comcenter .anim2{
+    transform: translate(-50%, -5%) rotate(45deg) scale(1);
+    opacity: 1;
+}
+
+.ptextdiv .comcenter .speedtextvalue p{
+    transform: rotate(-45deg);
+    font-size: 20px;
+    text-align: center;
+    padding: 0px 0px 0px 5px;
+}
+
+.ptextdiv .comcenter .pitchtextvalue p{
+    transform: rotate(-45deg);
+    font-size: 20px;
+    text-align: center;
+    padding: 0px 0px 0px 5px;
+}
+
+.ptextdiv #ang {
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: url(anglia.png) no-repeat center / cover;
+    position: absolute;
+    cursor: pointer;
+    transition: .5s;
+    bottom: 23%;
+    left: 12%;
+    animation: anglia 1.4s linear infinite;
+    line-height: 0px;
+    animation-play-state: paused;
+}
+
+.ptextdiv .engspan {
+    margin: 0 65px 0 45px;
+}
+
+.ptextdiv #rus {
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: url(russian.webp) no-repeat center / cover;
+    position: absolute;
+    cursor: pointer;
+    transition: .5s;
+    bottom: 23%;
+    right: 42%;
+    animation: anglia 1.4s linear infinite;
+    line-height: 0px;
+}
+
+
+@keyframes anglia{50%{transform: scale(1.2);}}
+
+
+.ptextdiv .comcenter .standart {
+    width: 100%;
+    height: 55px;
+    background: linear-gradient(45deg, rgba(189, 37, 254, 0.783), rgba(253, 220, 73, 0.783));
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0px 1px 1px 0px #000;
+    transition: .5s;
+    margin-top: 5px;
+}
+
+.ptextdiv .allcommand{
+    background: linear-gradient(90deg, rgba(197, 62, 255, 0.694), rgba(255, 226, 98, 0.694));
+    border-radius: 30px;
+    box-shadow: 0px 3px 4px 0px #000;
+    width: 100%;
+    padding: 10px 5px 5px 15px;
+    margin: 10px 0 0 -5px;
+}
+
+.comcenter .block{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#radio1, #radio2{
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    background: rgb(200, 214, 255);
+    border-radius: 28%;
+    cursor: pointer;
+    transition: .2s;
+}
+
+#radio1{
+    background: rgb(138, 43, 226);
+    border-radius: 50%;
+}
+
+.ptextdiv .comcenter label{
+    cursor: pointer;
+}
+
